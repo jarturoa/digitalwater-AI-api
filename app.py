@@ -17,12 +17,16 @@ app = Flask(__name__)
 #modeloDiario = Path('modeloDiario/')
 #scaler = Path("testScaler")
 #scalerLSTM = Path("scalerLSTM.save")
-scaler = "/app/testScaler"
-scalerLSTM = "/app/scalerLSTM.save"
+scaler = "testScaler"
+scalerLSTM = "scalerLSTM.save"
+#scaler = "/app/testScaler"
+#scalerLSTM = "/app/scalerLSTM.save"
 
 # Recreate the exact same model purely from the file
-importedMdl = tf.keras.models.load_model('/app/modeloDiario')
-importedLSTM = tf.keras.models.load_model('/app/LSTM')
+#importedMdl = tf.keras.models.load_model('/app/modeloDiario')
+#importedLSTM = tf.keras.models.load_model('/app/LSTM')
+importedMdl = tf.keras.models.load_model('modeloDiario/')
+importedLSTM = tf.keras.models.load_model('LSTM/')
 
 
 scaler_filename = scaler
