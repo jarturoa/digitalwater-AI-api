@@ -3,10 +3,11 @@ from flask import Flask, jsonify, request, json
 import tensorflow as tf
 from numpy import array, concatenate
 import pandas as pd
-from flask_jsonpify import jsonpify
 import json
-from sklearn.externals import joblib
+import joblib
 from sklearn.preprocessing import MinMaxScaler
+
+
 #from pathlib import Path
 
 
